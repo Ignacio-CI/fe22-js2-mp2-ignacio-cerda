@@ -22,11 +22,11 @@ export class TamagotchiGUI extends Tamagotchi {
         tamagotchi.append(img);
 
         if (type == 'dinosaur') {
-            img.src = '../images/trex.jpg';
+            img.src = './images/trex.jpg';
 
         }
         else {
-            img.src = '../images/mammoth.jpg';
+            img.src = './images/mammoth.jpg';
         };
 
         const nameElement = document.createElement('h2');
@@ -77,7 +77,7 @@ export class TamagotchiGUI extends Tamagotchi {
                 feedBtn.disabled = true;
                 playBtn.disabled = true;
 
-                img.src = '../images/rip.jpg';
+                img.src = './images/rip.jpg';
 
                 name.innerText = `${this.name} is dead!`;
                 
