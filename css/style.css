@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+body {
+  background: #ffefba; 
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #ffefba
+  ); 
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #ffefba
+  ); 
+}
+
+#header {
+  margin-top: 1vh;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#header h1 {
+  font-family: "Press Start 2P", cursive;
+}
+
+#header h2 {
+  font-family: "Silkscreen", cursive;
+  font-weight: 400;
+}
+
+#form-container {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 50%;
+  height: 45%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+form label {
+  font-family: "Monofett", cursive;
+  color: rgb(90, 90, 90);
+  font-size: 28px;
+}
+
+form input {
+  border-bottom: 1px solid gray;
+  font-family: "Silkscreen", cursive;
+  padding: 1%;
+}
+
+form select {
+  width: 15%;
+  border: 1px solid gray;
+  border-radius: 1px;
+  font-family: "Silkscreen", cursive;
+  font-weight: 400;
+  font-size: 12px;
+  padding: 1%;
+}
+
+form button {
+  width: 18%;
+  border: 1px solid gray;
+  border-radius: 4px;
+  font-family: "Silkscreen", cursive;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 1%;
+}
+
+#tamagotchi-container {
+  background: #fc4a1a;
+  background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);
+  background: linear-gradient(to right, #f7b733, #fc4a1a);
+  border-radius: 12px;
+  min-height: 74vh;
+  margin: 1% 10%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#instruction-container {
+  width: 100%;
+  height: 100px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Silkscreen", cursive;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+#instruction-container p {
+  color: rgb(55, 55, 55);
+}
+
+.tamagotchi {
+  width: 220px;
+  height: 300px;
+  margin: 1%;
+  background: #f00000;
+  background: -webkit-linear-gradient(to right, #dc281e, #f00000);
+  background: linear-gradient(to right, #dc281e, #f00000);
+  border: 2px solid black;
+  border-radius: 30%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50% 15% 15% 20;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.tamagotchi img {
+  grid-row: 1 / 2;
+  justify-self: center;
+  border-top-right-radius: 45%;
+  border-top-left-radius: 45%;
+  width: 80%;
+  height: 185px;
+  margin-top: 5%;
+  border: 2px solid black;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.tam-name {
+  grid-row: 2 / 3;
+  justify-self: center;
+  font-size: 100%;
+  font-family: "Silkscreen", cursive;
+  font-weight: 400;
+  font-size: 12px;
+  color: #e3e3e3;
+}
+
+.count-container {
+  width: 100%;
+  grid-row: 3 / 4;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.count-container h6 {
+  font-family: "Silkscreen", cursive;
+  font-weight: 400;
+  font-size: 10px;
+  color: #ffcc67;
+}
+
+.tam-btn-container {
+  grid-row: 4 / 5;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tam-btn-container button {
+  font-family: "Press Start 2P", cursive;
+  font-size: 8px;
+  padding: 2%;
+  margin-bottom: 4%;
+  border: 2px solid black;
+  border-radius: 40%;
+  background-color: #ffcc67;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.rip-tamagotchi {
+  background-color: gray;
+}
+
+.tam-btn-container button:hover {
+  transform: scale(1.03);
+}
+
+.tam-btn-container button:active {
+  transform: scale(0.9);
+}

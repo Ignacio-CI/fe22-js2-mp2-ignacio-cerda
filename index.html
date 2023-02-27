@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monofett&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="./main.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <h1>Tamagotchi</h1>
+        <h2>Enter a name, select a type and click on "Create"</h2>
+    </div>
+    <div id="form-container">
+        <form>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="name">
+            <label for="type">Select a type</label>
+            <select name="type" id="type">
+                <option value="dinosaur">Dinosaur</option>
+                <option value="mammoth">Mammoth</option>
+            </select>
+            <button type="submit">Create</button>
+        </form>
+    </div>
+    <div id="tamagotchi-container">
+        <div id="instruction-container">
+            <p>You can add how many Tamagotchis you want!</p>
+            <p>Press the buttons to feed and play with the Tamagotchi</p>
+            <p>Make sure that your Tamagotchis have enough food and are happy, otherwise they will die if their hunger or happiness level reaches zero</p>
+            <p></p>
+        </div>
+    </div>
+</body>
+</html>
